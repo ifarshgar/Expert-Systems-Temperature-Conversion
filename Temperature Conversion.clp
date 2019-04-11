@@ -1,4 +1,4 @@
-;; CREATED BY Abdolrahman Farshgar ifarshgar@gmail.com
+;; Abdolrahman Farshgar - ifarshgar@gmail.com
 ;; Temperature Conversion
 ;; Spring of 2019
 
@@ -6,13 +6,13 @@
 (defrule define-temperature-type
 	=>
 	(printout t 
-				crlf crlf
-				"What temperature do you want to convert?" crlf
-				"k- Kelvin" crlf
-				"c- Celsius" crlf
-				"f- Fahrenheit" crlf
-				"r- Reaumur" crlf
-				"Please enter your choice as only a lower case single character: "
+		crlf crlf
+		"What temperature do you want to convert?" crlf
+		"k- Kelvin" crlf
+		"c- Celsius" crlf
+		"f- Fahrenheit" crlf
+		"r- Reaumur" crlf
+		"Please enter your choice as only a lower case single character: "
 	) 
 	(bind ?type (read))
 
